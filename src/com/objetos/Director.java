@@ -4,7 +4,9 @@ public class Director extends Empleado  {
 
     public Director() { // estamos llamando al constructor vacio de Empleado
 
-        this.setSalarioMinimo(1400);
+        int salMinimo = super.getSalarioMinimo();
+        
+        this.setSalarioMinimo(salMinimo + 200);
         System.out.println("Salario Director");
     }
     
