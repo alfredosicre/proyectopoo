@@ -1,4 +1,7 @@
+import com.objetos.Director;
 import com.objetos.Persona;
+import com.objetos.Empleado;
+
 
 public class App {
     public static void main(String[] args){
@@ -7,14 +10,24 @@ public class App {
 
         try{
 
+        Director direc = new Director(); // añadimos la clase director
+        System.out.println("Director" + direc.getSalarioMinimo());
+
+        Empleado emp = new Empleado(); //añadimos la clase Empleados
+
+        emp.setNombre("Nombre Empleado");
+        emp.setApellidos("Apellidos Empleados");
+        System.out.println(emp.getNombreCompleto() + " " + emp.getSalarioMinimo());
+
         // instanciamos el objeto Persona
         Persona person = new Persona(); // llamamos a la clase Persona.java
+        Persona tyrion = new Persona("Tyrion", "Lannister");
         
         // ya podemos utilizar a Persona.java
         person.setNombre("Lucas");
         person.setApellidos("Lopez");
         person.setEdad(45);
-        person.setGenero(Persona.tipoGenero.MASCULINO);
+        //person.setGenero(Persona.tipoGenero.MASCULINO);
         person.setDni(2211537);
     
 

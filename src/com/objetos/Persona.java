@@ -2,6 +2,21 @@ package com.objetos;
 
 public class Persona {
 
+    // constructor lleva el nombre de la clase
+    public Persona(){
+        // cuando se ponga: new Persona() entra en este codigo
+        System.out.println("Soy el constructor vacio de Persona !!!");
+        this.setGenero(tipoGenero.FEMENINO); // inicializamos el genero siempre a FEMENINO en un principio
+
+    }
+    // otro constructor que reciba los datos que yo quiera
+    public Persona(String nombre, String apellidos){
+        System.out.println("Constructor con nombre y apellidos Persona");
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+
+    }
+
     // las propiedades son privadas. 
     private String nombre;
     private String apellidos;
