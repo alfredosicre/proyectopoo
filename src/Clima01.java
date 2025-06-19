@@ -6,7 +6,8 @@ public class Clima01 {
 
     public static void main(String[] args) {
         
-        Random rand = new Random();
+        Random rand = new Random(); // funcion para pedir un numero aleatorio
+
         ArrayList<Mes> coleccion = new ArrayList<Mes>(); // una coleccion con un objeto (Mes) 
         String[] nombresmeses = new String[] {"ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO", "JULIO", "AGOSTO", "SEPTIEMBRE", "OCTUBRE", "NOVIEMBRE", "DICIEMBRE"}; 
 
@@ -30,6 +31,6 @@ public class Clima01 {
         for(Mes m : coleccion){
             System.out.println(m);
         }
-
+        System.out.println("¡¡ FIN DE PROGRAMA !!");
     }
 }
