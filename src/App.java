@@ -9,7 +9,7 @@ public class App {
         System.out.println("Probando la clase Persona");
 
         try{
-
+            //
         // creamos una arraylist
         ArrayList<Persona> empleados = new ArrayList<Persona>();
 
